@@ -1,0 +1,19 @@
+
+
+npm init --yes    //inicializar un proyecto en node
+
+npm i express    //instalo expresss
+
+creo una carpeta src en la raiz de mi carpeta de trabajo
+
+instalar nodemon, como dependencia de desarrollo
+-------------------------------------------------
+npm i nodemon -D
+
+instalar para manejar variables de entorno y mysql
+--------------------------------------------------
+npm install dotenv mysql2
+
+
+
+luego en el archivo pack
