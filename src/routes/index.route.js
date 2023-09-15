@@ -18,5 +18,6 @@ indexRouter.get(prefix, (req, res) => {
 indexRouter.use(`${prefix}/marcas`, marcasRouter);
 indexRouter.use(`${prefix}/depositos`, depositoRouter);
 indexRouter.use(`${prefix}/clientes`, clienteRouter);
+indexRouter.use(`${prefix}/ventas/:desde?/:hasta?`, clienteRouter);
 
 export default indexRouter;
