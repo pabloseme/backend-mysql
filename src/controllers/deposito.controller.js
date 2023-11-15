@@ -1,8 +1,8 @@
 import * as depositoServices from "../services/deposito.service.js";
 
 export const getDepositos = (req, res) => {
-    depositoServices
-    .getDepositos()
+  depositoServices
+    .getDepositos
     .then((result) => {    
       res.status(200).json({
         message: "Depositos retrieved successfully",
@@ -47,7 +47,7 @@ export const createDeposito = (req, res) => {
 export const updateDeposito = (req, res) => {
   const deposito = req.body;
   const { id } = req.params;
-  depositoServicess
+  depositoServices
     .updateDeposito(id, deposito)
     .then(() => {
       res.status(200).json({
