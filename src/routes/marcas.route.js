@@ -4,7 +4,7 @@ import {
   getMarcas,
   getMarca,
   createMarca,
-  updateMarca,
+  updateMarca,  
   deleteMarca
 } from "../controllers/marcas.controller.js";
 

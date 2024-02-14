@@ -2,7 +2,7 @@ import * as gamesServices from "../services/games.service.js";
 
 export const getGames = (req, res) => {
     gamesServices
-    .getGames
+    .getGames()
     .then((result) => {    
       res.status(200).json({
         message: "Games retrieved successfully",

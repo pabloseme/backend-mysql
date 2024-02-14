@@ -2,13 +2,24 @@ import express from "express";
 
 import db from "./config/db.js";
 import indexRouter from "./routes/index.route.js";
+import cors from "cors";
+
+//const cors=require('cors');
+
 
 const app = express();
 
-app.set("port", process.env.PORT || 3000);
-
 // middleware
 app.use(express.json());
+
+
+app.use(cors({
+  origin :["http://127.0.0.1:5173"],
+  methods:["GET","POST"]
+}));
+
+app.set("port", process.env.PORT || 3000);
+
 
 // routes
 //app.use("/", (req, res)=>{

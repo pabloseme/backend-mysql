@@ -2,7 +2,7 @@ import * as depositoServices from "../services/deposito.service.js";
 
 export const getDepositos = (req, res) => {
   depositoServices
-    .getDepositos
+    .getDepositos()
     .then((result) => {    
       res.status(200).json({
         message: "Depositos retrieved successfully",
